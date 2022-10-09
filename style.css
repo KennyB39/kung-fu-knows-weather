@@ -7,10 +7,6 @@
 .h1-container {
     padding: 4px;
     background-color: rgb(177, 177, 98);
-
-}
-h1{
-    text-shadow: 10rem;
 }
 
 .form-container {
@@ -32,11 +28,51 @@ h1{
 
 .button {
     padding: 10px 15px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
 }
 
 .search-history-container {
     padding: 10px;
 }
 
+.past-search {
+    background-color: white;
+    border-width: thin;
+    border-color: lightgrey;
+    border-style: solid;
+    border-radius: 3px;
+    margin: 0;
+    text-align: left;
+    width: 350px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+    color: grey;
+}
+
+.current-weather-container {
+    border-color: lightgrey;
+    border-width: thin 0 thin thin;
+    border-style: solid;
+    border-radius: 3px;
+    margin: 20px 0 0 20px;
+    padding: 0 0 12px 0;
+}
+
+.current-title-container {
+    display: flex;
+}
+
+.current-title {
+    font-size: 40px;
+    margin: 15px 0 20px 20px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(177, 177, 98);
+    color: rgb(16, 0, 0);
+    text-align: center;
+}
