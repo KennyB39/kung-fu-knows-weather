@@ -23,11 +23,15 @@
     height: 40px;
     border-color: lightgrey;
     border-width: thin;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 .button {
-    padding: 10px 15px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+.button:hover{
+
 }
 
 .search-history-container {
@@ -76,3 +80,4 @@ footer{
     color: rgb(16, 0, 0);
     text-align: center;
 }
+
