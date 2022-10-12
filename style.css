@@ -145,3 +145,13 @@ footer{
     text-align: center;
 }
 
+iframe{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    /* background-color: rgb(177, 177, 98);
+    color: rgb(16, 0, 0); */
+    text-align: center; 
+}
