@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
-    <link 
-    rel="stylesheet" 
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Weather Report</title>
@@ -24,61 +23,63 @@
     <main class="main">
         <div class="container-fluid">
             <div class="row page-content">
-            
+
                 <div class="col-sm-4 bg-dark p-0">
-                
+
                     <div class="form-container">
                         <form id="search-form">
-                        
+
                             <div class="row m-0">
                                 <label for="search-input" class="search-label m-4 text-light">Search for a City:</label>
                             </div>
-                            
+
                             <div class="row m-0">
                                 <div class="col-sm-8 p-0 my-auto">
-                                    <input type="text" id="search-input" name="search-input" class="search-input rounded">
+                                    <input type="text" id="search-input" name="search-input"
+                                        class="search-input rounded">
                                 </div>
                                 <div class="col-sm-4 p-0">
                                     <div class="d-grid gap-2 col-6 mx-auto">
                                         <button class="btn-danger rounded" type="button">Search</button>
                                         <div class="btn:hover"></div>
 
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    
+
                     <div id="search-history-container" class="row m-0 search-history-container">
-  
+
                     </div>
                 </div>
-    
-              
+
+
                 <div class="col-sm-8 p-0">
-                
+
                     <div id="current-weather-container" class="row d-block">
-                    
+
                         <div class="current-title-container">
                             <h2 id="current-title" class="current-title d-inline"></h2>
                             <img id="current-weather-icon" class="d-inline" src="" alt="">
                         </div>
-                    
+
                         <p class="current-temperature" id="current-temperature"></p>
-                       
+
                         <p class="current-humidity" id="current-humidity"></p>
-                    
+
                         <p class="current-wind-speed" id="current-wind-speed"></p>
-                    
+
                         <p class="current-uv-index" id="current-uv-index"></p>
                         <p class="current-number rounded" id="current-number"></p>
                     </div>
-                
+
                     <div class="row future-forecast-container d-block">
-                
+
                         <h2 class="future-forecast-title" id="future-forecast-title"></h2>
-                        <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
-                        
+                        <div id="forecasts-cards-container"
+                            class="forecasts-cards-container d-flex justify-content-between">
+
                             <div class="future-card bg-primary rounded">
                                 <p class="future-date" id="future-date-1"></p>
                                 <img id="future-icon-1" src="" alt="">
@@ -109,7 +110,10 @@
                                 <p class="future-temp" id="future-temp-5"></p>
                                 <p class="future-humidity" id="future-humidity-5"></p>
                             </div>
-                            <link rel="stylesheet" href="https://www.youtube.com/watch?v=2DuePlxXfAM">
+                            <iframe width="430" height="225" src="https://www.youtube.com/embed/2DuePlxXfAM"
+                                title="YouTube video player" frameborder="75 justify-content-between"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -124,4 +128,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./script.js"></script>
 </body>
+
 </html>

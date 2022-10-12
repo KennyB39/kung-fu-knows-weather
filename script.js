@@ -124,7 +124,7 @@ var fiveDayForecastSection = function (cityName) {
                 var futureForecastTitle = $("#future-forecast-title");
                 futureForecastTitle.text("5-Day Forecast:")
 
-                for (var i = 1; i= 5; i+) {
+                for (var i = 1; i <= 5; i++) {
                     var futureCard = $(".future-card");
                         futureCard.addClass("future-card-details");
 
@@ -146,3 +146,4 @@ var fiveDayForecastSection = function (cityName) {
                 })
         })
 };
+
