@@ -1,5 +1,10 @@
-var apiKey = "a2852dfc1aa75c0227e70b0469f64fe9";
+var apiKey = "d91f911bcf2c0f925fb6535547a5ddc9";
 var savedSearches = [];
+
+$("#search-btn").on("click", function(){
+   var cityName= $("#search-input").val()
+    fiveDayForecastSection(cityName)
+})
 
 var searchHistoryList = function (cityName) {
     $('.past-search:contains("' + cityName + '")').remove();
@@ -37,7 +42,7 @@ var searchHistoryList = function (cityName) {
         for (var i = 0; i < savedSearchHistory.length; i++) {
             searchHistoryList(savedSearchHistory[i]);
         }
-    };
+};
 
     var currentWeatherSection = function (cityName) {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`)
@@ -112,7 +117,9 @@ var fiveDayForecastSection = function (cityName) {
         .then(function (response) {
             var cityLon = response.coord.lon;
             var cityLat = response.coord.lat;
-            fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=minutely,hourly,alerts&units=imperial&appid=${apiKey}`)
+            var url1 =`https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=minutely,hourly,alerts&units=imperial&appid=${apiKey}`;
+            var url2= `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${cityLat}&lon=${cityLon}&cnt=5&appid=${apiKey}`;
+            fetch(url1)
              
                 
             .then(function(response) {
@@ -124,7 +131,7 @@ var fiveDayForecastSection = function (cityName) {
                 var futureForecastTitle = $("#future-forecast-title");
                 futureForecastTitle.text("5-Day Forecast:")
 
-                for (var i = 1; i= 5; i+) {
+                for (var i = 1; i <= 5; i++) {
                     var futureCard = $(".future-card");
                         futureCard.addClass("future-card-details");
 
@@ -146,3 +153,4 @@ var fiveDayForecastSection = function (cityName) {
                 })
         })
 };
+
